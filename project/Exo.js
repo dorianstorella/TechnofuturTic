@@ -268,4 +268,39 @@ btnPlus.addEventListener("click" , () => {
     nbr.innerText= parseInt(nbr.innerText) + parseInt(inputPlus.value)
 })
 
+/*
+        <input type="text" id="addNom">
+        <input type="submit" id="sub" value="envoyer">
+        <ul id="ul"></ul>
+
+        <button id="delete">supprime</button>
+        <button id="deleteLast">supprimé le dernier in vité ajouté</button>
+
+        <script src="index.js"></script> 
+        <script src="Exo.js"></script>
+*/
+
+const addNom = document.getElementById("addNom")    //
+const sub = document.getElementById("sub") 
+const ul = document.getElementById("ul")
+const del = document.getElementById("delete")
+const deleteLast = document.getElementById("deleteLast")
+
+
+sub.addEventListener("click" , () => {
+    li = document.createElement("li")
+    ul.appendChild(li)
+    li.innerText = addNom.value
+})
+
+del.addEventListener("click" , () => {
+    ul.innerHTML = ""
+})
+
+deleteLast.addEventListener("click" , () => {
+    // list = document.getElementById("ul")
+    // list.removeChild(list.childNodes[0])
+    ul.removeChild(ul.lastElementChild)
+})
+
 
