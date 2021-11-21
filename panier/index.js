@@ -29,11 +29,12 @@
 // })
 
 
-let total = document.getElementById("prix_tot").value + 1 - 1
+
 const magasin = document.getElementsByClassName("magasin")
 let lengthMagasin = magasin.length
+let total = document.getElementById("prix_tot").value //+ 1 - 1
 
-for( i=0; i < lengthMagasin ;i++) {
+for( i=0; i < lengthMagasin ; i++) {
             
     const prix = [magasin[i].childNodes[3]]
         
