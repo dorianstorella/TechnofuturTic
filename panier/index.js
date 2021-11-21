@@ -30,22 +30,33 @@
 
 
 
-const magasin = document.getElementsByClassName("magasin")
-let lengthMagasin = magasin.length
-let total = document.getElementById("prix_tot").value //+ 1 - 1
+const magasin = document.getElementById("magasin")
+   // console.log(magasin.childNodes);
+let lengthMagasin = (magasin.childNodes).length 
+    //console.log(lengthMagasin); 
+let total = document.getElementById("prix_tot").value + 1 - 1
+//console.log(total);
+foo = -1
+for( let i=1; i < lengthMagasin ; i++) {
+    if (i % 2 ==! 0){  
+        foo++
+        const prix =  (magasin.childNodes[i].childNodes[3])        
 
-for( i=0; i < lengthMagasin ; i++) {
-            
-    const prix = [magasin[i].childNodes[3]]
-        
-    const AjoutCart = document.getElementsByTagName("button")[i].addEventListener("click",() => {
-       let content =  prix[0]
-       content = total+=parseInt(content.textContent)
-
-       totalprix = document.getElementById("prix_tot")
-       totalprix.setAttribute("value", content)
-    })  
+        const AjoutCart = document.getElementsByTagName("button")[foo].addEventListener("click",() => {
+            let content =  prix
+                //console.log(content);
+            content = total+=parseInt(prix.textContent)
+                console.log(prix.textContent);
+                console.log(content);
+            totalprix = document.getElementById("prix_tot")
+            totalprix.setAttribute("value", content)
+        })  
+    } 
 }
+
+
+
+
 
 
 
