@@ -1,6 +1,6 @@
 
 
-const chercher = function chercher(n) {
+const chercherParNom = function chercher(n) {
     let name 
     fetch("https://pokeapi.co/api/v2/pokemon/?offset=20&limit=898")
     .then(response => response.json())
@@ -34,25 +34,26 @@ const chercher = function chercher(n) {
             //console.log(pokemon.stats[0]);
             base_stat = pokemon.stats[0].base_stat
             effort = pokemon.stats[0].effort
-                console.log("stat de base: " +base_stat+" et effort : "+ effort);
+                //console.log("stat de base: " +base_stat+" et effort : "+ effort);
             type = pokemon.types[0].type.name
-                console.log("il est de type : " + type);
+                //console.log("il est de type : " + type);
             taille = pokemon.height
-                console.log("il est de " + taille + " de hauteur"  );
+                //console.log("il est de " + taille + " de hauteur"  );
             pouvoir ="son premier pouvoir est : "+ pokemon.abilities[0].ability.name+" ||| son deuxieme pouvoir est : "+pokemon.abilities[1].ability.name
             console.log(pouvoir);
-           
+            document.getElementById("p").innerHTML ="<h3>"+name+"</h3><p>stat de base: " +base_stat+"</p> <p>effort : "+ effort + "</p><p>il est de type : " + type+"</p><p>il est de " + taille + " metre de hauteur </p><p> son premier pouvoir est : "+ pokemon.abilities[0].ability.name+" ||| son deuxieme pouvoir est : "+pokemon.abilities[1].ability.name+"</p>"
+          
+
         })
     }) 
-   content = document.getElementsByTagName("p").innerText
-   console.log(content);
+  
    
 }
 
 const afficher = function afficher() {
-    chercher()
+    
 }
-afficher()
+chercherParNom()
 const typique = function typique() {
 
 }
