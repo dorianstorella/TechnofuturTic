@@ -1,0 +1,3 @@
+Demarre un nouveau projet en c# {
+    dans la console: dotnet new console
+}
