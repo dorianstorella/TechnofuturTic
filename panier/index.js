@@ -27,7 +27,15 @@
     
 //     totalprix.setAttribute("value", total)
 // })
+fetch("https://pokeapi.co/api/v2/pokemon/26")
 
+    .then(response => response.json())
+
+    .then((pokemon) => {
+
+        console.log(pokemon.stats[0].stat.name)
+
+    })
 
 
 const magasin = document.getElementById("magasin")
@@ -44,17 +52,15 @@ for( let i=1; i < lengthMagasin ; i++) {
 
         const AjoutCart = document.getElementsByTagName("button")[foo].addEventListener("click",() => {
             let content =  prix
-                //console.log(content);
+                // console.log(content);
             content = total+=parseInt(prix.textContent)
-                console.log(prix.textContent);
-                console.log(content);
+                // console.log(prix.textContent);
+                // console.log(content);
             totalprix = document.getElementById("prix_tot")
             totalprix.setAttribute("value", content)
         })  
     } 
 }
-
-
 
 
 

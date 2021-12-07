@@ -1,0 +1,13 @@
+[init]
+	defauiltBranch = main
+[user]
+	name = dorianstorella
+	email = dorianstorella@gmail.com
+[core]
+	editor = C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code
+[alias]
+	ci = commit -m
+	ps = push  
+	aa = add .	
+
+			

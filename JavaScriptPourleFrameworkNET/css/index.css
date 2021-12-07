@@ -1,5 +1,10 @@
 body {
+}
+#pokedex {
+    width: 45rem;
+    margin: auto;
     background-color: rgb(214, 214, 214);
+    padding: 10em;
 }
 a {
     text-decoration: none;
@@ -23,4 +28,18 @@ a {
 #content {
     padding: 50px;
 }
+img{
+    float:right;
+    height: 10rem;
+    width: 10rem;
+    margin-top: -25px;
+}
+.contRecherche {
+    margin: auto;
+    width:fit-content;    
+    overflow: hidden;
+}
+input {
+    margin-top: 50px;
 
+}

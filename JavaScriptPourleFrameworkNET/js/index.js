@@ -38,10 +38,17 @@ const chercherParNom = function chercher(n) {
             type = pokemon.types[0].type.name
                 //console.log("il est de type : " + type);
             taille = pokemon.height
+            /*
+
+            */
+            
+            img = pokemon.sprites.front_default
+            console.log(img);
+
                 //console.log("il est de " + taille + " de hauteur"  );
-            pouvoir ="son premier pouvoir est : "+ pokemon.abilities[0].ability.name+" ||| son deuxieme pouvoir est : "+pokemon.abilities[1].ability.name
-            console.log(pouvoir);
-            document.getElementById("p").innerHTML ="<h3>"+name+"</h3><p>stat de base: " +base_stat+"</p> <p>effort : "+ effort + "</p><p>il est de type : " + type+"</p><p>il est de " + taille + " metre de hauteur </p><p> son premier pouvoir est : "+ pokemon.abilities[0].ability.name+" ||| son deuxieme pouvoir est : "+pokemon.abilities[1].ability.name+"</p>"
+           
+  
+            document.getElementById("p").innerHTML ="<img src="+img+">" +"<h3>"+name+"</h3><p>stat de base: " +base_stat+"</p> <p>effort : "+ effort + "</p><p>il est de type : " + type+"</p><p>il est de " + taille + " metre de hauteur </p><p> son premier pouvoir est : "+ pokemon.abilities[0].ability.name+" ||| son deuxieme pouvoir est : "+pokemon.abilities[1].ability.name+"</p>"
           
 
         })
