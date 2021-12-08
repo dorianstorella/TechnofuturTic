@@ -42,9 +42,9 @@ namespace Operateur
             // B = 11, E = 14
             string CountryCode = "1114";
 
-            string compte1 = "001275693375";
+            //string compte1 = "001275693375";
             string compte2 = "001275693376";
-            string compte3 = "000000019497";
+            //string compte3 = "000000019497";
 
             string compte = compte2;
 

@@ -107,6 +107,7 @@ namespace Boucle
         */        
             #endregion
 
+            
             #region Bonus : Calculer la racine carré d’un nombre avec maximum 10 décimales (Math.Sqrt(x) ne peut être utilisée que pour vérifier la réponse)
         
             decimal maxError = decimal.Zero;
